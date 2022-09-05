@@ -865,6 +865,10 @@ section {
     margin: 1rem 0;
     font-size: 3rem;
   }
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
   .header .navbar #nav-close {
     display: block;
     position: absolute;
