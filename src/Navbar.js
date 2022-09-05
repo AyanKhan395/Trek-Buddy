@@ -6,7 +6,7 @@ export default function Navbar() {
  
 const [color, setColor] = useState(false);
 const changeColor = () =>{
-    if(window.scrollY >=90){
+    if(window.scrollY >=70){
         setColor(true)
     }else{
         setColor(false)
