@@ -1,3 +1,3 @@
 export default function Treks() {
-  return <h1>Treks</h1>
+  return <h1 style={{marginTop: "100px"}}>Treks</h1>
 }

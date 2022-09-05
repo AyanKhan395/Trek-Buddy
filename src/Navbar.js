@@ -1,4 +1,4 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './style.css';
 import { useState } from 'react';
 
@@ -22,12 +22,12 @@ window.addEventListener('scroll',changeColor)
 
       <nav className="navbar">
         <div id="nav-close" className="fas fa-times"></div>
-        <CustomLink to="/pricing">Pricing</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-        <CustomLink to="/about">fasd</CustomLink>
-          <a href="/packages">packages</a>
-          <a href="#reviews">reviews</a>
-          <a href="#blogs">blogs</a>
+        <CustomLink to="/treks">Treks</CustomLink>
+        <CustomLink to="/posts">Posts</CustomLink>
+        <CustomLink to="/camps">Camps</CustomLink>
+        <CustomLink to="/equipment-lister">Equipment Lister</CustomLink>
+        <CustomLink to="/blogs">Blogs</CustomLink>
+        <CustomLink to="/contact-us">Contact us</CustomLink>
       </nav>
       <div className="icons">
           <div id="menu-btn" className="fas fa-bars"></div>
@@ -55,8 +55,6 @@ window.addEventListener('scroll',changeColor)
 }
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
   return (
       <Link to={to} {...props}>
