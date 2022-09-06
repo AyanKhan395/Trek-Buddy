@@ -1,21 +1,16 @@
 import React from 'react'
 import '../style.css';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
+
 function Posts() {
   return (
-    
-    
-    <div style={{marginTop: "50px"}}>
+    <div style={{marginTop: "40px"}}>
       <section className="blogs" id="blogs">
-
-      
-
       <div>
       <h1 className="heading"> our daily posts </h1>
-      <Grid container spacing={5}>
+      <Grid container spacing={2}>
         <Grid item xs={12} sm={6} md={4}>
           <Paper>
             <div className="slide">
